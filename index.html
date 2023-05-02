@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <main>
+    <div class="text">
+      <div class="texta">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+  
+        <div class="coming">
+          <p class="light">
+             We're 
+          </p>
+  
+          <h1 class="bold">
+            coming soon
+          </h1>
+  
+          <p class="regular">
+             Hello fellow shoppers! We're currently building our new fashion store. 
+    Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+
+          <div class="input" placeholder="hello">
+            <input type="text"  placeholder="Email Address">
+            <img id="error" class="hide" src="images/icon-error.svg" alt="">
+            <button id="btn" class="svg">
+            <img src="images/icon-arrow.svg" alt="">
+            </button>
+          </div>
+          <P id="red" class="hide red">Please provide a valid Email</P>
+        </div>
+      </div>
+
+    
+
+    </div>
+    <div class="img">
+      <div class="logoB">
+        <img src="images/logo.svg" alt="">
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener("click", ()=>{
+      let red = document.getElementById("red");
+      let error = document.getElementById("error");
+      red.classList.toggle("hide");
+      error.classList.toggle("hide");
+    } )
+  </script>
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+</body>
+</html>
